@@ -1,0 +1,359 @@
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+  .header {
+    background-image: url("../images/football_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .header::after {
+    content: " ";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .surface_logo_text {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 135px;
+	height: 35px;
+  }
+
+  .header-title{
+    margin-top: 135px;
+  }
+  
+  .header-title-text {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .title-text1 {
+    margin-bottom: 30px;
+  }
+
+  .title-text2 {
+    padding-left: 14%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 85px;
+  }
+
+  .button {
+    display: flex;
+    margin-left: 83px;
+    flex-shrink: 0;
+  }
+
+  .submit-button {
+    width: 280px;
+    height: 35px;
+    border-radius: 38px;
+    filter: drop-shadow(0px 16px 12px #0a0e34);
+    background-color: #5e42b0;
+     border: none;
+  }
+
+  .submit-button:first-child {
+    margin-bottom: 10px;
+  }
+
+  .download-img {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    fill: #ffffff;
+  }
+
+  .button-text {
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+  }
+
+  .button-text-1 {
+    font-weight: 400;
+  }
+
+  .button-text-2 {
+    font-weight: 700;
+  }
+
+  .section {
+    position: relative;
+  }
+
+  .section-padding {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .section-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .section-title1::after {
+    content: url("../images/footballer_192.png");
+    position: absolute;
+    top: 80px;
+    left: 17%; /*75рх (расстояние от края макета слева до руки)-20рх(общий паддинг-лефт) делить на 320=17%. Или надо было как-то по-другому это считать?*/
+  }
+
+  .section-contain1 {
+    margin-top: 240px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #fafafa;
+  }
+
+  .section-name {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  .number {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .number::after {
+    width: 15px;
+    display: block;
+    height: 4px;
+    content: " ";
+    border-radius: 1px;
+    background-color: #5e42b0;
+  }
+
+  .number-name {
+    font-size: 23px;
+    letter-spacing: 1px;
+    color: #c1c1c1;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .section-main-text {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+
+  .section-contain2,
+  .section-contain3 {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: #f5f4f9;
+  }
+
+  .section-contain3 {
+    background-color: #5e42b0;
+  }
+
+  .text3 {
+    color: #ffffff;
+  }
+
+  .number3::after {
+    background-color: #ffffff;
+  }
+
+  .section-title2::after {
+    content: url("../images/basketballer_302.png");
+    position: absolute;
+    top: 80px;
+    left: 5.08%;
+  }
+
+  .section2 .section-contain3 {
+    background-color: #090c35;
+  }
+
+  .section2 .section-contain3 .number3 {
+    color: #8765dd;
+  }
+
+  .section-part2-img {
+    width: 100%;
+  }
+
+  .section-part2-name {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #e7e7e7;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .section-part2-contain::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0;
+    position: absolute;
+    bottom: 225px;
+    left: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #f5f6f7;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+  }
+
+  .section3 .section-part2-contain::before {
+    content: "01";
+  }
+
+  .section4 .section-part2-contain::before {
+    content: "02";
+  }
+
+  .section5 .section-part2-contain::before {
+    content: "03";
+  }
+  
+  .section-part2-contain::after {
+    width: 16px;
+    bottom: 245px;
+    left: 46px;
+    height: 4px;
+    content: " ";
+    border-radius: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    opacity: 0.5;
+  }
+  
+  .section-part2-text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding-bottom: 80px;
+  }
+
+  .footer {
+    background-image: url("../images/game_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 8px;
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .footer::after {
+    content: " ";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .footer-logo {
+    width: 60px;
+    height: 45px;
+    padding-bottom: 60px;
+    fill: #ffffff;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+  }
+
+  .footer-part-text {
+    text-align: center;
+  }
+
+  .footer-download {
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #9b8ec1;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+
+  .footer .container .surface_logo_text {
+    padding-top: 80px;
+  }
+
