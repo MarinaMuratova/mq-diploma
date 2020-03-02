@@ -20,12 +20,12 @@
   .header {
     background-image: url("../images/football_767.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center; /*образовалась полоска внизу, не понимаю, как ее убрать. образовалась, потому что картинка закончилась? Картинку надо преподнять, чтобы граница по шлему проходила. тоже не понимаю как*/
     background-size: cover;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 80px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 6.25%; /*20px (отступ по макету)/320px(ширина макета)*/
+    padding-left: 6.25%;
     position: relative;
   }
 
@@ -47,14 +47,16 @@
 
   .surface_logo_text {
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     width: 135px;
 	height: 35px;
   }
 
   .header-title{
-    margin-top: 135px;
+    margin-top: 130px;
+    margin-bottom: 85px;
   }
   
   .header-title-text {
@@ -79,13 +81,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 85px;
   }
 
   .button {
     display: flex;
-    margin-left: 83px;
-    flex-shrink: 0;
+    margin-left: 80px;
   }
 
   .submit-button {
@@ -95,6 +95,7 @@
     filter: drop-shadow(0px 16px 12px #0a0e34);
     background-color: #5e42b0;
      border: none;
+     flex-shrink: 0;
   }
 
   .submit-button:first-child {
@@ -127,11 +128,12 @@
 
   .section {
     position: relative;
+    overflow: hidden;
   }
 
   .section-padding {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 6.25%; /*20px (отступ по макету)/320px(ширина макета)*/
+    padding-left: 6.25%; /*20px (отступ по макету)/320px(ширина макета)*/
   }
 
   .section-title {
@@ -252,7 +254,7 @@
     height: 70px;
     background-color: #5e42b0;
     position: absolute;
-    bottom: 225px;
+    top: -60px;
     left: 20px;
     font-size: 14px;
     letter-spacing: 1px;
@@ -278,7 +280,7 @@
   
   .section-part2-contain::after {
     width: 16px;
-    bottom: 245px;
+    top: -10px;
     left: 46px;
     height: 4px;
     content: " ";
@@ -333,6 +335,7 @@
 
   .footer-part-text {
     text-align: center;
+    margin-bottom: 70px;
   }
 
   .footer-download {
@@ -354,6 +357,423 @@
   }
 
   .footer .container .surface_logo_text {
-    padding-top: 80px;
+    margin-top: 80px;
   }
+
+@media(min-width: 641px){
+    .header {
+    background-image: url("../images/football_1280.jpg");
+    padding-top: 30px;
+    padding-bottom: 80px;
+    padding-right: 7.16%; /*55px (отступ по макету)/768px(ширина макета)*/
+  padding-left: 7.16%;
+    position: relative;
+  }
+
+.surface_logo_text {
+    width: 200px;
+  height: 60px;
+  }
+
+  .header-title{
+    margin-top: 170px;
+    margin-bottom: 310px;
+  }
+  
+  .header-title-text {
+    font-size: 64px;
+    letter-spacing: 3px;
+  }
+
+  .title-text1 {
+    margin-bottom: 30px;
+  }
+
+  .title-text2 {
+    padding-left: 15%;
+  }
+
+  .buttons {
+    flex-direction: row;
+    margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  }
+
+  .submit-button {
+    width: 310px; /*макет дан для ширины 768, ширина кнопок для 768 подходящая, но для 641 нет. получается, ширину кнопок надо задавать в относительных единицах?*/
+    height: 70px;
+  }
+
+  .submit-button:first-child {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+
+  .download-img {
+    width: 45px;
+    height: 45px;
+    margin-right: 30px;
+  }
+
+  .button-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .button-text-1 {
+    font-weight: 300;
+  }
+
+  .section-padding {
+    padding-right: 3.91%; /*30px/768px*/
+    padding-left: 39.06%; /*300px/768px*/
+  }
+
+  .section-title {
+    margin-top: 85px;
+  margin-bottom: 60px;
+    font-size: 80px;
+  }
+
+  .section-title1::after {
+    content: url("../images/footballer_497.png");
+    position: absolute;
+    top: 30px;
+    left: -25%; /* как правильно расположить мужика? должен ли он куда-то двигаться при сужении/расширении экрана?*/
+  }
+
+  .section-contain1 {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 35px;
+    background-color: none;
+  }
+
+  .number {
+    font-size: 18px;
+  }
+
+  .number::after {
+    width: 19px;
+    height: 5px;
+  }
+
+  .number-name {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  .section-main-text {
+    font-size: 16px;
+  }
+
+  .section-contain2,
+  .section-contain3 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .section-title2::after {
+    content: url("../images/basketballer_436.png");
+    position: absolute;/*вопрос про расположение аналогичный. плюс этого не получается приподнять наверх*/
+    top: 50px;
+    left: 43.6%;
+  }
+
+.section2 .section-padding {
+  padding-right: 45.57%;/*350px/768px*/
+  padding-left: 4.56%; /*35px/768px*/
+}
+.section3 .section-padding, .section4 .section-padding, .section5 .section-padding {
+  padding-left: 4.95%;
+}
+  .section-part2-name {
+    font-size: 80px;
+    padding-top: 85px;
+    margin-bottom: 35px;
+  }
+
+  .section-part2-contain::before {
+    width: 110px;
+    height: 110px;
+    top: -80px; /*можно ли как-то контент внутри сдвинуть вниз?*/
+    left: 4.95%; /*38px/768px*/
+  }
+
+  .section-part2-contain::after {
+    width: 25px;
+    left: 11%; /*черточка ездит, не могу зафиксировать относительно цифрв*/
+    top: -30px;
+    height: 5px;
+    border-radius: 2px;
+  }
+  
+  .section-part2-text {
+    font-size: 24px;
+    padding-bottom: 100px;
+  }
+
+  .footer {
+    background-image: url("../images/game_1280.jpg");
+    padding-top: 120px;
+    padding-bottom: 18px;
+    padding-right: 4.12%;
+    padding-left: 4.12%;
+  }
+
+  .footer-logo {
+    width: 100px;
+    height: 85px;
+    padding-bottom: 0px;
+  }
+
+  .footer-part-text {
+    text-align: center;
+    margin-top: 80px;
+  margin-bottom: 285px;
+  }
+
+  .footer-download {
+    font-size: 80px;
+    letter-spacing: 0px;
+  }
+
+  .footer-text {
+    font-size: 36px;
+    letter-spacing: 0px;
+  }
+
+  .footer .container .surface_logo_text {
+    margin-top: 50px;
+  }
+}
+
+@media(min-width: 961px){
+  .header {
+    background-image: url("../images/football_1920.jpg");
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-right: 10%; /*192px/1920px*/
+    padding-left: 10%;
+  }
+
+  .surface_logo_text {
+    width: 200px;
+  height: 60px;
+  }
+
+  .header-title{
+    margin-top: 290px;
+    margin-bottom: 220px;
+  }
+  
+  .header-title-text {
+    font-size: 90px;
+    letter-spacing: 5px;
+  }
+
+  .title-text1 {
+    margin-bottom: 15px;
+  }
+
+  .title-text2 {
+    padding-left: 23.44%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  }
+
+  .submit-button {
+    width: 310px;
+    height: 70px;
+  }
+
+  .submit-button:first-child {
+    margin-bottom: 0px;
+    margin-right: 45px;
+  }
+
+  .download-img {
+    width: 45px;
+    height: 45px;
+    margin-right: 30px;
+  }
+
+  .button-text {
+    font-size: 14px;
+  }
+
+  .button-text-1 {
+    font-weight: 300;
+  }
+
+  .section-padding {
+    padding-right: 10.42%; 
+    padding-left: 52.6%; 
+  }
+
+  .section-title {
+    margin-top: 120px;
+  margin-bottom: 100px;
+    font-size: 80px;
+  }
+
+  .section-title1::after {
+    content: url("../images/footballer_566.png");
+    top: 10px;
+    left: 0; 
+  }
+
+  .section-contain1 {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 55px;
+    background-color: #ffffff;
+  }
+
+  .section-name {
+    margin-bottom: 30px;
+  }
+
+  .number {
+    font-size: 18px;
+  }
+
+  .number::after {
+    width: 19px;
+    height: 5px;
+  }
+
+  .number-name {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  .section-main-text {
+    font-size: 20px;
+  }
+
+  .section-contain2,
+  .section-contain3 {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .section-title2::after {
+    content: url("../images/basketballer_991.png");
+    position: absolute;
+    top: 10px;
+    left: 43.6%;
+    overflow: hidden;
+  }
+
+.section-part2{
+  display: flex;
+}
+.section4{
+  flex-direction: row-reverse;
+}
+
+  .section-part2-img {/*не  понимаю, почему все 3 картинки разного размера*/
+    width: 100%;
+  }
+
+  .section-part2-name {
+    font-size: 80px;
+    padding-top: 85px;
+    margin-bottom: 35px;
+     padding-left: 0;
+  }
+
+  .section-part2-contain::before { /*не получается настроить, тк картинки разные*/
+    width: 110px;
+    height: 110px;
+    left: -10%;
+    top: 120px;
+  }
+  .section-part2-contain:nth-child(2)::before {/*почему не срабатывает выбор второго?*/
+    width: 110px;
+    height: 110px;
+    left: 80%;
+    top: 120px;
+  }
+  
+  .section-part2-contain::after {
+    width: 25px;
+    left: -8.5%;
+    height: 5px;
+    top: 110px;
+    border-radius: 2px;
+  }
+  
+  .section-part2-text {
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-left: 0;
+    padding-bottom: 100px;
+  }
+
+  .footer {
+    background-image: url("../images/game_1920.jpg");
+    padding-top: 220px;
+    padding-bottom: 50px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+.footer-desktop{
+  display: flex;
+  margin-bottom: 285px;
+  align-items: center;
+  justify-content: center;/*не понимаю, почему прибилось к правому краю*/
+  margin-left: auto;
+    margin-right: auto;
+}
+  .footer-logo {
+    width: 110px;
+    height: 85px;
+    padding-bottom: 0px;
+    margin-right: 40px;
+  }
+
+  .footer-part-text {
+    text-align: center;
+    margin-top: 0px;
+  margin-bottom: 0px;
+
+  }
+
+  .footer-download {
+    font-size: 80px;
+    letter-spacing: 4px;
+  }
+
+  .footer-text {
+    font-size: 30px;
+    letter-spacing: 0px;
+  }
+
+  .footer .container .surface_logo_text {
+    margin-top: 260px;
+  }
+}
 
