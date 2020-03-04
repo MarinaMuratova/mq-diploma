@@ -85,7 +85,11 @@
 
   .button {
     display: flex;
+    text-decoration: none;
     margin-left: 80px;
+  }
+  a{
+    text-decoration: none;
   }
 
   .submit-button {
@@ -96,6 +100,7 @@
     background-color: #5e42b0;
      border: none;
      flex-shrink: 0;
+
   }
 
   .submit-button:first-child {
@@ -128,6 +133,9 @@
 
   .section {
     position: relative;
+  }
+
+  .section1, .section2{
     overflow: hidden;
   }
 
@@ -148,7 +156,7 @@
     content: url("../images/footballer_192.png");
     position: absolute;
     top: 80px;
-    left: 17%; /*75рх (расстояние от края макета слева до руки)-20рх(общий паддинг-лефт) делить на 320=17%. Или надо было как-то по-другому это считать?*/
+    left: calc(50% - 96px); 
   }
 
   .section-contain1 {
@@ -333,6 +341,17 @@
     z-index: 3;
   }
 
+  .footer-part-text::before{
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #5e42b0;
+    position: absolute;
+    top: -15px;
+    left: 43%; /*не получается сделать под логотипом, чтобы не ездил в стороны*/
+  }
+
   .footer-part-text {
     text-align: center;
     margin-bottom: 70px;
@@ -408,7 +427,9 @@
   }
 
   .submit-button {
-    width: 310px; /*макет дан для ширины 768, ширина кнопок для 768 подходящая, но для 641 нет. получается, ширину кнопок надо задавать в относительных единицах?*/
+    width: 40.4%;
+    max-width: 310px; 
+    min-width: 260px;
     height: 70px;
   }
 
@@ -447,7 +468,7 @@
     content: url("../images/footballer_497.png");
     position: absolute;
     top: 30px;
-    left: -25%; /* как правильно расположить мужика? должен ли он куда-то двигаться при сужении/расширении экрана?*/
+    left: -25%; 
   }
 
   .section-contain1 {
@@ -483,9 +504,9 @@
 
   .section-title2::after {
     content: url("../images/basketballer_436.png");
-    position: absolute;/*вопрос про расположение аналогичный. плюс этого не получается приподнять наверх*/
+    position: absolute;/*не получается приподнять наверх - top  задан, но он не поднимается еще выше. Еще он получился обрубленный*/
     top: 50px;
-    left: 43.6%;
+    right: 0;
   }
 
 .section2 .section-padding {
@@ -534,7 +555,12 @@
     height: 85px;
     padding-bottom: 0px;
   }
-
+.footer-part-text::before{
+    width: 135px;
+    height: 135px;
+    border-radius: 38px;
+    top: -20px;
+  }
   .footer-part-text {
     text-align: center;
     margin-top: 80px;
@@ -753,8 +779,15 @@
     height: 85px;
     padding-bottom: 0px;
     margin-right: 40px;
+    margin-left: 0;
   }
-
+.footer-part-text::before{
+    width: 135px;
+    height: 135px;
+    border-radius: 38px;
+    top: 10px;
+    left: 21.7%;
+  }
   .footer-part-text {
     text-align: center;
     margin-top: 0px;
