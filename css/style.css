@@ -478,7 +478,7 @@ height: 45px;
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 35px;
-    background-color: none;
+    background-color: transparent;
   }
 
   .number {
@@ -751,12 +751,16 @@ height: 85px;
 width: 50%;
 }
 
+.section3 img, .section4 img, .section5 img {
+display: block;
+}
+
 .section-part2-contain{
   box-sizing: border-box;
 }
 
   .section-part2-name {
-    font-size: 8vw;
+    font-size: calc(3.125vw + 30px);
     padding-top: 35px;
     margin-bottom: 35px;
      padding-left: 0;
